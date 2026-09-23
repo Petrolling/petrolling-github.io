@@ -331,7 +331,7 @@ body {
   top: 50%;
   width: 20px;
   height: 15px;
-  transform: translate(-50%,-50%) perspective(40px) rotateY(-12deg);
+  transform: translate(-50%,-50%) perspective(40px) rotateY(-20deg);
   background: linear-gradient(#f65314,#f65314) 0 0 / 45% 45% no-repeat,
               linear-gradient(#7cbb00,#7cbb00) 100% 0 / 45% 45% no-repeat,
               linear-gradient(#00a1f0,#00a1f0) 0 100% / 45% 45% no-repeat,
