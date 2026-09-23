@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+  <meta charset="utf-8" />
+  <title>Craig Herd || Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <h1 class="sr-only">Craig Herd Portfolio</h1>
+  <main class="desktop desktop--plain" id="desktop">
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <!-- portfolio window-->
+    <section class="window is-open is-static" id="win-welcome" role="dialog" aria-label="Portfolio"
+             style="--w: 840px; --h: 500px">
+      <header class="titlebar">
+        <span class="ico-wrap sm"><span class="ico ico-flag"></span></span>
+        <span class="window-title">Portfolio</span>
+        <div class="window-buttons">
+          <button class="win-btn min-btn" type="button" aria-label="Minimise" title="Minimise">_</button>
+          <button class="win-btn max-btn" type="button" aria-label="Fullscreen" title="Fullscreen" id="fullscreen-btn">□</button>
+          <button class="win-btn close-btn" type="button" aria-label="Close" title="Close">X</button>
+        </div>
+      </header>
+      <div class="window-body">
+        <div class="hero">          
+          <div class="hero__text">
+            <h2 class="hero__name">Craig Herd</h2>
+            <p class="hero__eyebrow">Game developer</p>
+            <p class="hero__tagline">
+              Hello! I am a game developer interested in gameplay mechanics and the inner workings of games. I love working in Unity, Unreal, and SFML.
+            </p>
+            <p class="hero__meta">Dundee, UK <br> LinkedIn: <br> E-Mail: 2307522@uad.ac.uk <br> GitHub: <a href="https://github.com/Petrolling"> https://github.com/Petrolling </a> </p>
+            
+          </div>
+        </div>
+        <div class="tiles">
+          <div class="tile">
+            <h3>Skills</h3>
+            <ul>
+                <li>C++, C#</li>
+                <li>Unreal Engine 5</li>
+                <li>Unity</li>
+                <li>SFML</li>
+            </ul> 
+          </div>
+          <div class="tile">
+            <h3>Education</h3>
+            <p><strong>Abertay University</strong> - Computer Games Application Development (4th year)</p>
+          </div>
+        </div>
+        <div class="tiles">
+          <div class="tile tile--wide">
+            <h3>Previous Work</h3> <br>
+            <p><strong>CMP302</strong> - Magic ability system with Enemy AI pathing, health, and mana system.</p>
+            <img class="project-gif" src="302.gif" alt="302 gameplay gif"> <br> <br>
 
+            <p><strong>DES315</strong> - Worked on enemy AI, combat, movement, and ability systems.</p>
+                        <img class="project-gif" src="315.gif" alt="302 gameplay gif"> <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- taskbar -->
+  <div class="taskbar taskbar--static" role="toolbar" aria-label="Taskbar">
+    <div class="start-orb" id="start-orb" aria-hidden="true">
+      <span aria-hidden="true"></span>
+    </div>
+
+    <div class="taskbar-tasks" id="taskbar-tasks" aria-hidden="true">
+      <span class="task-btn is-active is-inert">
+        <span class="ico-wrap sm"><span class="ico ico-flag"></span></span>
+        <span class="task-btn__label">Portfolio</span>
+      </span>
+    </div>
+
+    <div class="tray">
+      <div class="tray__clock">
+        <span id="tray-time"></span>
+        <span id="tray-date"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
