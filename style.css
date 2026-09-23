@@ -48,6 +48,16 @@ body {
   padding: 18px;
 }
 
+.desktop--plain.is-fullscreen-mode {
+  display: block;
+  padding: 0;
+}
+
+.window.is-static.is-fullscreen .window-body {
+  border: 0;
+  border-radius: 0;
+}
+
 /* icon */
 .ico-wrap {
   position: relative;
@@ -106,7 +116,6 @@ body {
   display: flex;
 }
 
-/* the blue bar at the top of the window */
 .titlebar {
   display: flex;
   align-items: center;
@@ -116,12 +125,10 @@ body {
   cursor: default;
 }
 
-/* pushes the buttons to the right side */
 .window-title {
   flex-grow: 1;
 }
 
-/* the white part inside the window */
 .window-body {
   flex: 1;
   min-height: 0;
@@ -140,10 +147,20 @@ body {
   max-height: calc(100% - 12px);
 }
 
-/* fullscreen mode when u press the square button */
 .window.is-static.is-fullscreen {
-  width: calc(100vw - 36px);
-  height: calc(100% - 12px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 /* text inside the window */
@@ -165,7 +182,7 @@ body {
   color: #2a3a4a;
 }
 
-/* the buttons at top right */
+/* top right btns */
 .window-buttons {
   display: flex;
   gap: 2px;

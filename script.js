@@ -12,6 +12,8 @@
   function toggleFullscreen() {
     if (!win) return;
     win.classList.toggle("is-fullscreen");
+    var desk = document.getElementById("desktop");
+    if (desk) desk.classList.toggle("is-fullscreen-mode", win.classList.contains("is-fullscreen"));
     if (fsBtn) fsBtn.textContent = win.classList.contains("is-fullscreen") ? "❐" : "□";
   }
   function init() {
